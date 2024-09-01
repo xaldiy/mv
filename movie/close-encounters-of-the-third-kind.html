@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer Film - Close Encounters of the Third Kind</title>
+    <link rel="stylesheet" href="styles/movie.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://vidsrc.me/embed/movie/840" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+        </div>
+        <div class="description">
+            <h2>Close Encounters of the Third Kind</h2>
+        </div>
+        <div class="button-container">
+            <div class="button-container">
+                <button class="show-button" onclick="openModal()">Lihat Deskripsi</button>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Close Encounters of the Third Kind. All rights reserved.
+        </div>
+    </div>
+
+    <!-- Modal Pop-up -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Close Encounters of the Third Kind</h2>
+            <p id="modalDescription">
+                Roy Neary, seorang pekerja listrik yang mengalami pertemuan dekat dengan UFO saat bekerja. Setelah pertemuan itu, Roy menjadi terobsesi dengan peristiwa tersebut dan mulai menggambar dan memvisualisasikan gambar-gambar yang berkaitan dengan pertemuannya. Sementara itu, seorang ibu muda bernama Jillian Guiler juga mengalami pertemuan dengan UFO yang membawa anaknya pergi.
+                Film ini menggambarkan perjalanan kedua tokoh utama tersebut untuk memahami arti pertemuan mereka dengan kehidupan luar angkasa. Mereka akhirnya bertemu dengan para ilmuwan yang sedang mencoba berkomunikasi dengan UFO menggunakan not musik.
+            </p>
+        </div>
+    </div>
+
+    <script src="scripts/movie.js"></script>
+</body>
+</html>

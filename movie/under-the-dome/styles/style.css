@@ -1,0 +1,176 @@
+body, html {
+    margin: 5px;
+    text-align: center;
+    padding: 6px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    position: relative;
+    height: 100%;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #252525;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+    height: 90vh;
+}
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .dropdown-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #818181;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    width: 100%;
+    text-align: left;
+    outline: none;
+}
+.sidenav .dropdown-btn:hover {
+    background-color: #333;
+    color: #f1f1f1;
+}
+.sidenav .dropdown-container {
+    display: none;
+    background-color: #494949;
+    padding-left: 20px;
+}
+.sidenav .submenu a {
+    padding: 5px 0px 5px 20px;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+}
+.sidenav .submenu a:hover {
+    color: #f1f1f1;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.description {
+    display: none;
+    padding: 20px;
+}
+.show {
+    display: block;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.show-button, .hide-button {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.hide-button {
+    display: none;
+}
+.openbtn {
+    background-color: transparent;
+    opacity: 0.8;
+    color: lime;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border: none;
+    outline: none;
+    z-index: 3;
+}
+.openbtn:hover {
+    background-color: #444;
+    opacity: 1;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.thumbnails-container {
+display: flex;
+flex-wrap: wrap;
+background-color: rgb(48, 48, 48);
+justify-content: center;
+}
+.thumbnail {
+width: 200px;
+padding: 10px;
+margin: 10px;
+text-align: center;
+z-index: 1;
+box-shadow: 0 2px 4px rgba(0, 255, 0, 0.5);
+transition: transform 0.5s, background-color 1s;
+background-color: white;
+border: 10px;
+border-radius: 10px;
+text-decoration: none;
+color: #000;
+}
+.thumbnail:hover {
+transform: translateY(-5px);
+background-color: black;
+color: cyan;
+box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+transition: box-shadow 0.3s ease; 
+}
+.thumbnail img {
+width: 90%;
+height: auto;
+border-radius: 5px;
+}

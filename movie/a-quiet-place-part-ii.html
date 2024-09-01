@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer Film - A Quiet Place Part II</title>
+    <link rel="stylesheet" href="styles/movie.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://vidsrc.me/embed/movie/520763" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+        </div>
+        <div class="description">
+            <h2>A Quiet Place Part II</h2>
+        </div>
+        <div class="button-container">
+            <div class="button-container">
+                <div class="button-container">
+                    <button class="show-button" onclick="openModal()">Lihat Deskripsi</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 A Quiet Place Part II All rights reserved.
+        </div>
+    </div>
+
+    <!-- Modal Pop-up -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">A Quiet Place Part II</h2>
+            <p id="modalDescription">
+                "A Quiet Place Part II" melanjutkan kisah keluarga Abbott setelah kejadian di film pertama. Mereka terpaksa meninggalkan rumah mereka dan berusaha mencari tempat perlindungan baru. Di perjalanan, mereka bertemu dengan beberapa karakter baru dan menghadapi berbagai rintangan baru yang membuat mereka harus menghadapi bahaya dari makhluk asing yang menyeramkan itu lagi. Part II juga membuka sedikit lebih banyak informasi tentang asal-usul makhluk tersebut dan dunia pasca-apokaliptik yang mereka tinggali.
+            </p>
+        </div>
+    </div>
+
+    <script src="scripts/movie.js"></script>
+</body>
+</html>

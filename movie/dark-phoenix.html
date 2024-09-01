@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer Film - Dark Phoenix</title>
+    <link rel="stylesheet" href="styles/movie.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://vidsrc.me/embed/movie/320288" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+        </div>
+        <div class="description">
+            <h2>Dark Phoenix</h2>
+        </div>
+        <div class="button-container">
+            <div class="button-container">
+                <button class="show-button" onclick="openModal()">Lihat Deskripsi</button>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 X Men All rights reserved.
+        </div>
+    </div>
+
+    <!-- Modal Pop-up -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Dark Phoenix</h2>
+            <p id="modalDescription">
+                X-Men menghadapi musuh mereka yang paling tangguh dan kuat ketika salah satu dari mereka, Jean Gray, mulai lepas kendali. Selama misi penyelamatan di luar angkasa, Jean hampir terbunuh ketika dia ditabrak oleh kekuatan kosmik misterius. Begitu dia kembali ke rumah, kekuatan ini tidak hanya membuatnya jauh lebih kuat, tetapi jauh lebih tidak stabil. X-Men sekarang harus bersatu untuk menyelamatkan jiwanya dan melawan alien yang ingin menggunakan kemampuan baru Grey untuk memerintah galaksi.
+            </p>
+        </div>
+    </div>
+
+    <script src="scripts/movie.js"></script>
+</body>
+</html>

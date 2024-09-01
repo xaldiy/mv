@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer Film - A Quiet Place</title>
+    <link rel="stylesheet" href="styles/movie.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://vidsrc.me/embed/movie/447332" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+        </div>
+        <div class="description">
+            <h2>A Quiet Place</h2>
+        </div>
+        <div class="button-container">
+            <div class="button-container">
+                <div class="button-container">
+                    <button class="show-button" onclick="openModal()">Lihat Deskripsi</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 A Quiet Place All rights reserved.
+        </div>
+    </div>
+
+    <!-- Modal Pop-up -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">A Quiet Place</h2>
+            <p id="modalDescription">
+                Di dunia pasca-apokaliptik yang didominasi oleh makhluk asing yang sangat peka terhadap suara. Keluarga Abbott, yang terdiri dari Lee (dimainkan oleh John Krasinski), Evelyn (dimainkan oleh Emily Blunt), dan tiga anak mereka, harus hidup dalam kesunyian dan berusaha bertahan hidup tanpa membuat suara agar tidak ditangkap oleh makhluk tersebut. Mereka menggunakan berbagai cara untuk berkomunikasi dan melindungi diri, termasuk bahasa isyarat dan menciptakan lingkungan yang minim suara.
+            </p>
+        </div>
+    </div>
+
+    <script src="scripts/movie.js"></script>
+</body>
+</html>

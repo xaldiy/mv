@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        .parallax {
+            background-image: url('firstreq.jpg');
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+        }
+        .parallax:nth-child(2) {
+            background-image: url('firstrnd.jpg');
+        }
+        .overlay {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.226);
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .parallax:hover .overlay {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parallax" onclick="location.href='requested/index.html';">
+        <div class="overlay">Requested Movies</div>
+    </div>
+
+    <div class="parallax" onclick="location.href='random/index.html';">
+        <div class="overlay">Random Movies</div>
+    </div>
+    <script src="scripts/func.js"></script>
+</body>
+</html>

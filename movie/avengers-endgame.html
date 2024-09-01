@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer Film - Avengers: Endgame</title>
+    <link rel="stylesheet" href="styles/movie.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://vidsrc.me/embed/movie/tt4154796" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+        </div>
+        <div class="description">
+            <h2>Avengers: Endgame</h2>
+        </div>
+        <div class="button-container">
+            <div class="button-container">
+                <button class="show-button" onclick="openModal()">Lihat Deskripsi</button>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Avengers All rights reserved.
+        </div>
+    </div>
+
+    <!-- Modal Pop-up -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Avengers: Endgame</h2>
+            <p id="modalDescription">
+                After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.
+            </p>
+        </div>
+    </div>
+    <script src="scripts/movie.js"></script>
+</body>
+</html>
